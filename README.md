@@ -1,6 +1,6 @@
 # Portfolio Project
 
-![Modern Portfolio Website](https://github.com/user-attachments/assets/4f82669c-9a5a-4761-a927-2f54f0f64169)
+![Modern Portfolio Website](https://i.ibb.co/LdD4pj5g/Opera-Snapshot-2025-03-07-024335-vishaldhurweyportfolio-netlify-app.png)
 
 ## Overview
 
@@ -26,20 +26,39 @@ This project is a portfolio website template showcasing skills, projects, and ex
 ## 📁 Project Structure
 
 ```
-/the-portfolio
-├── .next/
-│   ├── cache/
-│   ├── server/
-│   └── static/
-├── public/
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── utils/
-│   └── dummy.json
-├── .eslintrc.json
-├── .env
-├── .gitignore
+PORTFOLIO/
+│
+├─ .next/               
+├─ node_modules/       
+├─ public/              
+│   ├─ next.svg
+│   ├─ preview.png
+│   └─ vercel.svg
+│
+├─ src/               
+│   ├─ app/            
+│   └─ components/      
+│       ├─ ui/          
+│       │   ├─ about.tsx        
+│       │   ├─ Certificates.tsx 
+│       │   ├─ Contact.tsx      
+│       │   ├─ CustomCursor.tsx 
+│       │   ├─ Education.tsx    
+│       │   ├─ filters.tsx     
+│       │   ├─ header.tsx       
+│       │   ├─ hero.tsx         
+│       │   ├─ Loader.tsx       
+│       │   ├─ LoaderWrapper.tsx
+│       │   ├─ ProjectDialog.tsx
+│       │   ├─ projects.tsx     
+│       │   ├─ Skills.tsx       
+│       │   └─ Timeline.tsx     
+│       └─ utils/        
+│
+├─ .env                 
+├─ .eslintrc.json       
+├─ .gitignore          
+├─ dummy.json                      
 ├── next-env.d.ts
 ├── next.config.mjs
 ├── package.json
@@ -84,13 +103,13 @@ This project is a portfolio website template showcasing skills, projects, and ex
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/tehseen01/the-portfolio.git
+   git clone https://github.com/VishalDhurwey/Portfolio
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd the-portfolio
+   cd Portfolio
    ```
 
 3. Install the dependencies:
@@ -124,18 +143,14 @@ Contributions are welcome! Please follow these steps:
 - Add appropriate documentation
 - Ensure all tests pass
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Contact
 
 For questions or feedback, reach out through:
 
-- Email: tehseen.type@gmail.com
-- Twitter: [@tehseen_type](https://twitter.com/tehseen_type)
-- LinkedIn: [Mohd Tehseen](https://linkedin.com/in/tehseen.01)
+- Email: vldhurwey@gmail.com
+- LinkedIn: [Vishal Dhurwey](https://www.linkedin.com/in/vishaldhurwey/)
 
 ---
 
-Built with ❤️ by [Mohd Tehseen]
+Built with ❤️ by [Vishal Dhurwey]
