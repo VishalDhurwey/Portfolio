@@ -1,5 +1,5 @@
 const site_url =
-  process.env.NEXT_PUBLIC_APP_URL || "https://the-portfolio-lac.vercel.app";
+  process.env.NEXT_PUBLIC_APP_URL || "https://vishaldhurweyportfolio.netlify.app";
 
 export const siteConfig = {
   name: "Vishal | Full Stack Developer",
