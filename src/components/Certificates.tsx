@@ -2,37 +2,44 @@
 
 import { SlideIn, Transition } from "./ui/Transitions";
 import { SectionHeading } from "./ui/Typography";
+import { ExternalLink } from "./ui/Icons";
 
 interface Certificate {
   name: string;
   issuer: string;
   date: string;
+  url?: string;
   description?: string;
 }
 
 const certificationsData: Certificate[] = [
   {
-    name: "Diploma in HPC",
-    issuer: "AI/ML – CDAC Bengaluru",
-    date: "September 2024 - February 2025"
+    name: "AI/ML – CDAC Bengaluru",
+    issuer: "Diploma in HPC",
+    date: "September 2024 - February 2025",
+    url: "#",
+    description: "Completed a 6-month intensive program focused on High-Performance Computing, parallel programming (CUDA, OpenCL, OpenACC), and end-to-end AI/ML model development and deployment using Flask and OpenVINO on HPC systems."
   },
   {
-    name: "RELEVEL (UnAcademy)",
-    issuer: "Front End Developer Course",
+    name: "Front End Developer Course",
+    issuer: "RELEVEL (UnAcademy)",
     date: "July 2022 - April 2023",
-    description: "Certificate"
+    url: "https://drive.google.com/file/d/1FQBQvN0IjzwyY2bfXJRJ50wuAbiccB1B/view?usp=sharing",
+    description: "Hands-on training in frontend technologies including React, JavaScript, and UI/UX design principles. Built responsive web applications and improved code quality and performance."
   },
   {
-    name: "Hacker Rank",
-    issuer: "Front End Developer (React)",
-    date: "",
-    description: "Certificate"
+    name: "Front End Developer (React)",
+    issuer: "Hacker Rank",
+    date: "November 2023",
+    url: "https://www.hackerrank.com/certificates/b974c21dc2e8",
+    description: "Certified for proficiency in building modern frontend applications using React, demonstrating solid understanding of components, state management, and UI development."
   },
   {
     name: "JavaScript And CSS",
     issuer: "Hacker Rank",
-    date: "",
-    description: "Certificate"
+    date: "November 2023",
+    url: "https://www.hackerrank.com/certificates/d955b47646b8",
+    description: "Certified for strong knowledge in core JavaScript and CSS, including DOM manipulation, styling, and responsive web design techniques."
   }
 ];
 
@@ -48,7 +55,21 @@ function Certifications() {
         {certificationsData.map((cert, index) => (
           <Transition key={index}>
             <div className="p-6 rounded-lg border border-white/10 backdrop-blur-sm hover:border-white/20 transition-all">
-              <h3 className="text-xl font-semibold mb-2">{cert.name}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {cert.url ? (
+                  <a 
+                    href={cert.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition-colors flex items-center gap-2"
+                  >
+                    {cert.name}
+                    <ExternalLink />
+                  </a>
+                ) : (
+                  cert.name
+                )}
+              </h3>
               <p className="text-white/60 mb-1">{cert.issuer}</p>
               {cert.date && <p className="text-white/40 text-sm">{cert.date}</p>}
               {cert.description && (

@@ -20,7 +20,7 @@ const Hero = ({ about }: HeroProps) => {
       </Transition>
       <LoaderWrapper>
         <div className="relative h-full w-full">
-          <div className="flex items-center justify-center flex-col h-full pb-10">
+          <div className="flex items-center justify-center flex-col h-full pb-10 px-4">
             <Transition>
               <img
                 src={about.avatar.url}
@@ -28,16 +28,17 @@ const Hero = ({ about }: HeroProps) => {
                 className="rounded-full size-28 object-cover"
               />
             </Transition>
-            <div className="py-6 flex items-center flex-col">
-              <h2 className="md:text-7xl text-4xl font-bold overflow-hidden">
-                <SlideIn>Hello! I&apos;m {about.name}</SlideIn>
+            <div className="py-6 flex items-center flex-col text-center">
+              <h2 className="md:text-7xl text-3xl font-bold overflow-hidden flex flex-col md:flex-row md:gap-3">
+                <SlideIn>Hello! I&apos;m</SlideIn>
+                <SlideIn>{about.name}</SlideIn>
               </h2>
-              <h1 className="md:text-7xl text-3xl overflow-hidden">
+              <h1 className="md:text-7xl text-2xl overflow-hidden pt-2">
                 <SlideIn>{about.title}</SlideIn>
               </h1>
             </div>
             <Transition viewport={{ once: true }} className="w-full">
-              <p className="opacity-70 md:text-xl py-4 w-10/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2">
+              <p className="opacity-70 md:text-xl text-base py-4 w-11/12 md:w-2/3 mx-auto flex flex-wrap justify-center gap-2 text-center">
                 {about.subTitle.split(" ").map((word, index) => (
                   <span key={index}>{word}</span>
                 ))}

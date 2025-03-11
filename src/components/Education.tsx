@@ -40,7 +40,7 @@ function Education() {
               <h3 className="text-xl font-semibold mb-2">{edu.institution}</h3>
               <p className="text-white/60 mb-1">{edu.degree}</p>
               <p className="text-white/40 text-sm">{edu.duration}</p>
-              {edu.details && <p className="text-white/60 mt-2">{edu.details}</p>}
+              {/* {edu.details && <p className="text-white/60 mt-2">{edu.details}</p>} */}
             </div>
           </Transition>
         ))}

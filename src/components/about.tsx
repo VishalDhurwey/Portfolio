@@ -3,13 +3,13 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import { motion } from "motion/react";
 
-import { About as IAbout, Timeline } from "../utils/interface";
+import { About as IAbout, Timeline as ITimeline } from "../utils/interface";
 import { OpacityTextReveal, SlideIn, Transition } from "./ui/Transitions";
 import { formatDate } from "../utils";
-
+import Timeline from "./Timeline";
 interface AboutProps {
   about: IAbout;
-  timeline: Timeline[];
+  timeline: ITimeline[];
 }
 
 const About = ({ about, timeline }: AboutProps) => {
@@ -36,7 +36,8 @@ const About = ({ about, timeline }: AboutProps) => {
         >
           <OpacityTextReveal>{about.description}</OpacityTextReveal>
         </Transition>
-        <div className="pt-10">
+        <Timeline timeline={timeline} />
+        <div >
           <div className="py-10 overflow-hidden grid w-full">
             {education.map((edu, index) => (
               <Transition key={edu._id}>
@@ -71,7 +72,7 @@ const About = ({ about, timeline }: AboutProps) => {
 export default About;
 
 interface TimelineCardProps {
-  timeline: Timeline;
+  timeline: ITimeline;
   activeIndex: number;
   setActiveIndex: Dispatch<SetStateAction<number>>;
   index: number;
@@ -88,7 +89,7 @@ const TimelineCard = ({
       className="flex items-center justify-between gap-4 cursor-pointer select-none"
       onClick={() => setActiveIndex(index)}
     >
-      <span>0{index + 1}</span>
+      {/* <span>0{index + 1}</span> */}
       <span className="text-xl md:text-3xl font-bold flex-1">
         {timeline.jobTitle}
       </span>

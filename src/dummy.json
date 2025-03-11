@@ -2,9 +2,9 @@
   "about": {
     "name": "Vishal Dhurwey",
     "title": "Full Stack Developer",
-    "subTitle": "I develop user-friendly applications and integrate AI/ML models into production.",
-    "description": "As a Full Stack Developer with experience in React, Flask, and AI/ML model integration, I specialize in building scalable applications that solve real-world problems. My expertise spans front-end development, backend APIs, and deploying deep learning models for real-time inference. With hands-on experience in HPC and cloud technologies, I am passionate about delivering optimized solutions for medical AI, e-commerce, and CRM applications.",
-    "quote": "Code, Learn, Evolve.",
+    "subTitle": "From UI to AI — I build end-to-end solutions that scale and perform in real time.",
+    "description": "I'm a Full Stack Developer skilled in React, Flask, and AI/ML model integration. I build scalable, real-world applications with a focus on performance, from frontend design to backend APIs and real-time deep learning deployment. With hands-on experience in HPC and cloud, I specialize in medical AI, e-commerce, and CRM solutions.",
+    "quote": "Create. Innovate. Elevate.",
     "exp_year": "1",
     "address": "Bengaluru, Karnataka, India",
     "some_total": "90",
@@ -32,8 +32,8 @@
   "role": "admin",
   "timeline": [
     {
-      "company_name": "CDAC Bengaluru",
-      "summary": "Worked on High-Performance Computing systems and AI/ML model deployment",
+      "company_name": "CDAC ",
+      "summary": "Completed a 6-month advanced diploma focused on High-Performance Computing (HPC) and AI/ML model deployment, combining core concepts with real-world application.",
       "sequence": 1,
       "icon": {
         "public_id": "1706289470834-siro83",
@@ -41,14 +41,16 @@
       },
       "startDate": "2024-09-01T00:00:00.000Z",
       "endDate": "2025-02-01T00:00:00.000Z",
-      "jobTitle": "Internhip - AI/ML Engineer",
+      "jobTitle": "AI/ML & HPC Internship",
       "jobLocation": "Bengaluru, Karnataka",
       "bulletPoints": [
-        "Worked on High-Performance Computing (HPC) systems, configuring multi-core environments and cluster systems",
-        "Implemented parallel programming using CUDA, OpenACC, and OpenCL to accelerate performance-critical tasks",
-        "Developed and deployed machine learning models using Flask, optimizing inference speed on HPC platforms",
-        "Optimized computations using HPC clusters, improving processing speed and efficiency"
-      ],
+  "Explored HPC architecture and cluster-based computing systems",
+  "Implemented parallel programming using CUDA, OpenCL, and OpenACC",
+  "Built and deployed ML/DL models with Scikit-learn, Keras, and OpenVINO",
+  "Developed real-time inference APIs using Flask on HPC platforms",
+  "Worked with cloud, virtualization, and containerization for scalable AI solutions",
+  "Performed EDA and data visualization using Python, Pandas, and Power BI"
+],
       "forEducation": true,
       "enabled": true,
       "_id": "65b3e93feb20546ae6d46369"
@@ -307,16 +309,16 @@
   ],
   "projects": [
     {
-      "liveurl": "#",
-      "githuburl": "#",
-      "title": "Kidney Stone Detection using Ultrasound Images",
+      "liveurl": "https://kidneystonedetection.netlify.app/",
+      "githuburl": "https://github.com/VishalDhurwey/kidneystone_frontend",
+      "title": "AI-Powered Kidney Stone Detection",
       "sequence": 3,
       "image": {
         "public_id": "1706284812399-jr7rqj",
         "url": "https://i.ibb.co/7dCXYTmn/Kidneystone-AI.png"
       },
-      "description": "Built a deep learning model with YOLOv8, achieving 71% accuracy for detecting kidney stones in ultrasound images. Developed Flask API for image upload, inference, and size estimation, reducing latency by 40%. Optimized computations using HPC clusters. ",
-      "techStack": ["Reactjs ", " Nextjs "," CSS" ,"Python", "TensorFlow", "Flask", "HPC", "YOLOv8", "Google Gemini API"],
+      "description": "This project is a medical AI application designed to detect kidney stones in ultrasound images using deep learning. A custom YOLOv8 model was trained, achieving 71% accuracy in identifying stones. The backend, built with Flask, handles real-time image uploads, inference, and stone size estimation. Integration with HPC clusters significantly improved processing speed and reduced latency. Additionally, the system connects with the Google Gemini API to generate insights and recommendations based on the detection results. ",
+      "techStack": ["Reactjs ", " Nextjs "," CSS" ,"Python", "TensorFlow", "Flask", "Google Gemini API"],
       "_id": "65b3d734313a9b09a24a14a3",
       "enabled": true
     },
@@ -329,7 +331,7 @@
         "public_id": "1706284812399-jr7rqj",
         "url": "https://i.ibb.co/d4hqWnsJ/Opera-Snapshot-2025-03-06-173649-localhost.png"
       },
-      "description": "Developed a React-based CRM platform with a dynamic dashboard, boosting engagement by 20%. Implemented Redux for state management, improving data handling and application performance by 30%. Built a responsive UI with Material UI components. ",
+      "description": "Sales Cloud is a dynamic CRM platform built using React, designed to help businesses manage customer relationships and sales pipelines effectively. It features a responsive dashboard for tracking leads, deals, and analytics. Redux was used for efficient state management, improving data consistency and performance. The interface, built with Material UI, ensures a modern look and smooth usability across all screen sizes. ",
       "techStack": ["React", "Redux", "JavaScript", "Material UI"],
       "_id": "65b3d719313a9b09a24a148f",
       "enabled": true
@@ -343,7 +345,7 @@
         "public_id": "1706284812399-jr7rqj",
         "url": "https://i.ibb.co/0yYcSFCt/Opera-Snapshot-2025-03-07-015831-localhost.png"
       },
-      "description": "Created a responsive e-commerce application in React, increasing sales by 25% through enhanced product navigation. Integrated OAuth authentication and implemented product listing, filtering, and REST API integration. ",
+      "description": "This is a responsive e-commerce web application developed for outdoor gear and equipment. Built using React and Bootstrap, it features product listings with advanced filtering for an improved user shopping experience. OAuth integration secures the login system, while REST API connectivity enables seamless product browsing, cart management, and order processing.",
       "techStack": ["React", "JavaScript", "OAuth", "Bootstrap"],
       "_id": "65b3d70d313a9b09a24a1488",
       "enabled": true

@@ -128,7 +128,7 @@ const Card = ({ title, image }: Project) => {
             {title}
           </p>
           <button className="flex gap-2 items-center justify-center max-md:px-4">
-            <TextReveal className="max-md:text-sm">Visit</TextReveal>
+            <TextReveal className="max-md:text-sm">Open</TextReveal>
             <span className="bg-black text-white/80 rounded-full p-1">
               <ArrowUpRight />
             </span>
