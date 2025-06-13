@@ -2,9 +2,9 @@ const site_url =
   process.env.NEXT_PUBLIC_APP_URL || "https://vishaldhurweyportfolio.netlify.app";
 
 export const siteConfig = {
-  name: "Vishal | Full Stack Developer",
+  name: "Vishal | Frontend Developer",
   description:
-    "Personal portfolio website showcasing my projects and skills as a full stack developer",
+    "Personal portfolio website showcasing my projects and skills as a frontend developer",
   url: site_url,
   ogImage: `${site_url}/_static/og-image.png`,
   links: {

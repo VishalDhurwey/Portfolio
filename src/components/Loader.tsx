@@ -41,7 +41,7 @@ const Loader = ({ setHideLoader }: PageLoadProps) => {
           <Transition transition={{ delay: 0.4 }}>
             <div className="text-3xl md:text-5xl w-full md:w-2/5 whitespace-pre-wrap">
               <OpacityTransition>
-              I build full stack applications with AI integration
+              I build frontend applications with AI integration
               </OpacityTransition>
             </div>
           </Transition>
