@@ -17,14 +17,14 @@ const certificationsData: Certificate[] = [
     name: "AI/ML – CDAC Bengaluru",
     issuer: "Diploma in HPC",
     date: "September 2024 - February 2025",
-    url: "#",
+    url: "https://drive.google.com/file/d/1K6vjZSGVlOuvHMAmSs-q_IE--S01ai1w/view",
     description: "Completed a 6-month intensive program focused on High-Performance Computing, parallel programming (CUDA, OpenCL, OpenACC), and end-to-end AI/ML model development and deployment using Flask and OpenVINO on HPC systems."
   },
   {
     name: "Front End Developer Course",
     issuer: "RELEVEL (UnAcademy)",
     date: "July 2022 - April 2023",
-    url: "https://drive.google.com/file/d/1FQBQvN0IjzwyY2bfXJRJ50wuAbiccB1B/view?usp=sharing",
+    url: "https://drive.google.com/file/d/11u48e-2Me34YU4OLsB4Xco7Th8h8PQ-j/view",
     description: "Hands-on training in frontend technologies including React, JavaScript, and UI/UX design principles. Built responsive web applications and improved code quality and performance."
   },
   {
